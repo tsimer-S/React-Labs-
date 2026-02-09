@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+  box-shadow: 0 4px 20px rgba(0, 255, 200, 0.2);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00ffcc;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  margin-right: 8px;
+}
+
+.nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #00ffcc;
+  bottom: -6px;
+  left: 0;
+  transition: width 0.3s;
+}
+
+.nav a:hover {
+  color: #00ffcc;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
